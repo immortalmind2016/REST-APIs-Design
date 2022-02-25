@@ -12,4 +12,15 @@ const deleteOne = async (req, res: Response) => {
   //DB logic
   res.json({ success: true });
 };
-export default { list, findOne, deleteOne };
+
+const create = async (req, res: Response) => {
+  //DB logic
+  res.json({});
+};
+
+const update = async (req, res: Response) => {
+  //DB logic
+  res.json({});
+};
+
+export default { list, findOne, deleteOne, create, update };

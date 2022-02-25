@@ -8,5 +8,7 @@ router.get("/", postsController.list);
 router.get("/:postId", postsController.findOne);
 router.options("/", (_, res) => res.json(options));
 router.delete("/:postId", postsController.deleteOne);
+router.post("/", postsController.create);
+router.put("/:postId", postsController.update);
 
 export default router;
