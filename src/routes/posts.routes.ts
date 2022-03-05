@@ -10,5 +10,6 @@ router.options("/", (_, res) => res.json(options));
 router.delete("/:postId", postsController.deleteOne);
 router.post("/", postsController.create);
 router.put("/:postId", postsController.update);
+router.post("/:postId/like", postsController.like);
 
 export default router;

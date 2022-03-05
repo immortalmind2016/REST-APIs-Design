@@ -27,4 +27,9 @@ const update = async (req, res: Response) => {
   res.json({});
 };
 
-export default { list, findOne, deleteOne, create, update };
+const like = async (req, res: Response) => {
+  //DB logic
+  res.json({});
+};
+
+export default { list, findOne, deleteOne, create, update, like };
