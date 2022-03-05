@@ -6,6 +6,10 @@ const list = async (_, res: Response) => {
 };
 const findOne = async (req, res) => {
   //DB logic
+
+  res.set({
+    "Last-Modified": Date.now(),
+  });
   res.json({});
 };
 const deleteOne = async (req, res: Response) => {
